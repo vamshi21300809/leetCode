@@ -1,12 +1,4 @@
 class Solution {
-
-    public void printArray(int[][] matrix,int n){
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                System.out.print(matrix[i][j]);
-            }
-        }
-    }
     public void rotate(int[][] matrix) {
         int n = matrix.length;
         for(int i=0;i<n-1;i++){
@@ -25,7 +17,6 @@ class Solution {
                 p1++;
                 p2--;
             }
-        }
-        printArray(matrix,matrix.length);
+        }        
     }
 }
