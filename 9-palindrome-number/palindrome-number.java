@@ -1,5 +1,8 @@
 class Solution {
     public boolean isPalindrome(int x) {
+        if(x < 0){
+            return false;
+        }
         int palin = 0;
         int n = x;
         while(n > 0){
@@ -10,8 +13,6 @@ class Solution {
         if(palin != x){
             return false;
         }
-        else{
-            return true;
-        }
+        return true;
     }
 }
