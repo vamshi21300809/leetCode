@@ -5,12 +5,12 @@ class Solution {
         }
         int palin = 0;
         int n = x;
-        while(n > 0){
-            int temp = n % 10;
+        while(x > 0){
+            int temp = x % 10;
             palin = palin * 10 + temp;
-            n /= 10;
+            x /= 10;
         }
-        if(palin != x){
+        if(palin != n){
             return false;
         }
         return true;
