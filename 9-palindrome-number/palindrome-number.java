@@ -10,6 +10,8 @@ class Solution {
         if(palin != x){
             return false;
         }
-        return true;
+        else{
+            return true;
+        }
     }
 }
