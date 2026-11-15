@@ -1,7 +1,7 @@
 class Solution {
     public boolean isPalindrome(String s) {
         char ch[] = s.toCharArray();
-        int l = 0,r = ch.length - 1;
+        int l = 0,r = s.length() - 1;
         while(l < r){
             while(l < r && !Character.isLetterOrDigit(ch[l])){
                 l++;
