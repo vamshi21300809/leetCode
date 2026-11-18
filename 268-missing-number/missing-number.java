@@ -4,10 +4,7 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             sum += nums[i];
         }
-        int total_sum = 0;
-        for(int i=0;i<=nums.length;i++){
-            total_sum += i;
-        }
+        int total_sum = nums.length * (nums.length + 1) / 2;
         return total_sum - sum;
     }
 }
